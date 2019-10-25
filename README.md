@@ -1,19 +1,7 @@
 # carproject
 Car project in laravel
 
-A github
-
-git init
-
-git add . --all
-
-git commit -m 'comentario'
-
-git remote add nombre https://github.com/izvdaw1920/carproject.git
-
-git push -u nombre master
-
-B Paso a paso:
+A> Paso a paso:
 
 1º crear la app
 
@@ -48,3 +36,15 @@ php artisan make:model --migration --controller --resource Vehiculo
 php artisan migrate
 
 9º publicamos en github (arriba)
+
+B> github
+
+git init
+
+git add . --all
+
+git commit -m 'comentario'
+
+git remote add nombre https://github.com/izvdaw1920/carproject.git
+
+git push -u nombre master
