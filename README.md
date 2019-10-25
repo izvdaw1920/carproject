@@ -48,3 +48,15 @@ git commit -m 'comentario'
 git remote add nombre https://github.com/izvdaw1920/carproject.git
 
 git push -u nombre master
+
+C> publicar cambios en github
+
+git add . --all
+
+git commit -m "agregando cambios y archivos nuevos"
+
+git push
+
+D> si hemos modificado algo directmente en github, antes de publicar los cambios
+
+git pull
