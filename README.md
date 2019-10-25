@@ -35,7 +35,7 @@ php artisan make:model --migration --controller --resource Vehiculo
 
 php artisan migrate
 
-9º publicamos en github (arriba)
+9º publicamos en github
 
 B> github
 
