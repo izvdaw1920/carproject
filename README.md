@@ -1,7 +1,7 @@
 # carproject
 Car project in laravel
 
-1. github
+A github
 
 git init
 
@@ -13,7 +13,7 @@ git remote add nombre https://github.com/izvdaw1920/carproject.git
 
 git push -u nombre master
 
-2. Paso a paso:
+B Paso a paso:
 
 1º crear la app
 
