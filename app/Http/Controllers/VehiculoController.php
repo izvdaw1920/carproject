@@ -14,7 +14,8 @@ class VehiculoController extends Controller
      */
     public function index()
     {
-        //
+        $productos = Vehiculo::all();
+        return view('car')->with(['vehiculos' => $productos]);
     }
 
     /**
