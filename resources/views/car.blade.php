@@ -1,12 +1,13 @@
 <table border="1">
-    @foreach ($vehiculos as $producto)
+    @foreach ($vehiculos as $vehiculo)
         <tr>
-            <td>{{$producto->id}}</td>
-            <td>{{$producto->modelo}}</td>
-            <td>{{$producto->idfabricante}}</td>
-            <td>{{$producto->fabricante->id}}</td>
-            <td>{{$producto->fabricante->nombre}}</td>
-            <td>{{$producto->fabricante->pais}}</td>
+            <td>{{$vehiculo->id}}</td>
+            <td>{{$vehiculo->modelo}}</td>
+            <td>{{$vehiculo->idfabricante}}</td>
+            <td>{{$vehiculo->fabricante->id}}</td>
+            <td>{{$vehiculo->fabricante->nombre}}</td>
+            <td>{{$vehiculo->fabricante->pais}}</td>
         </tr>
     @endforeach
 </table>
+<a href="{{ url('vehiculo/create') }}">Agregar vehiculo</a>
