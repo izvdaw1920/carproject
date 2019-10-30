@@ -19,12 +19,6 @@ class VehiculoController extends Controller
      */
     public function index()
     {
-        //var_dump(Vehiculo::all()); exit;
-        // $x = Vehiculo::all();
-        // foreach($x as $y) {
-        //     var_dump($y);
-        //     exit;
-        // }
         return view('car')->with(['vehiculos' => Vehiculo::all()]);
     }
 
@@ -47,15 +41,13 @@ class VehiculoController extends Controller
      */
     public function store(VehiculoRequest $request)
     {
-        return 'hola';
-        //\Debugbar::enable();
         $vehiculo = new Vehiculo($request->validated());
         try {
-            //$result = $vehiculo->save();
+            $result = $vehiculo->save();
         } catch(\Exception $e) {
-            //return redirect(route('vehiculo.create'));
+            return redirect(route('vehiculo.create'));
         }
-        //return redirect(route('vehiculo.index'));
+        return redirect(route('vehiculo.index'));
     }
 
     /**
